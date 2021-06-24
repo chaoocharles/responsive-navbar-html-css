@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+/* Nav */
+nav {
+  height: 70px;
+  background: rgb(20, 20, 20);
+  color: rgb(209, 209, 209);
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+nav svg{
+  display: none;
+}
+.logo h2{
+    text-decoration: overline;
+    font-style: italic;
+    color: rgb(0, 206, 206);
+    cursor: pointer;
+    margin: 0 0.5rem;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.overview,
+.account {
+  display: flex;
+}
+.overview {
+  margin-right: 4rem;
+}
+.nav-items h3 {
+  display: none;
+}
+nav li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: rgb(200, 200, 200);
+}
+nav a:hover {
+  color: #a0ebfd;
+}
+nav a::after{
+    content: '';
+    display: block;
+    height: 3px;
+    background: #a0ebfd;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+nav a:hover::after{
+    width: 100%
+}
+#check, .menu{
+  display: none;
+}
+/* Hero section */
+.hero-section {
+  height: 100vh;
+  background: url("hero-bg.jpg") center no-repeat;
+  background-size: cover;
+}
+
+/* Responsive */
+@media (max-width: 750px){
+  .nav-items{
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 100vh;
+    width: 250px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: rgb(20, 20, 20);
+    padding: 2rem;
+    right: -250px;
+    transition: all ease-in-out 500ms;
+  }
+  .overview, .account{
+    flex-direction: column;
+    width: auto;
+  }
+  .overview{
+    margin: 0;
+  }
+  
+  .nav-items h3{
+    display: inline-block;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 1rem;
+  }
+  nav svg{
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+  }
+  nav li{
+    margin:1rem 0;
+  }
+  nav a{
+    display: inline-block;
+  }
+  nav a:hover{
+    margin-left: 2px;
+    transition: all ease-in-out 300ms;
+  }
+  .menu{
+    display: inline-block;
+    position: fixed;
+    right: 2rem;
+    z-index: 99;
+  }
+  #check:checked ~ .nav-items{
+    right:0;
+  }
+}
