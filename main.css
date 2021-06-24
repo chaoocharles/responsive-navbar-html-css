@@ -11,7 +11,7 @@
 nav {
   height: 70px;
   background: rgb(20, 20, 20);
-  color: rgb(209, 209, 209);
+  color: rgb(220, 220, 220);
   padding: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -49,7 +49,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: rgb(200, 200, 200);
+  color: rgb(220, 220, 220);
 }
 nav a:hover {
   color: #a0ebfd;
