@@ -125,7 +125,7 @@ nav a:hover::after {
   .menu {
     display: inline-block;
     position: fixed;
-    right: 2rem;
+    right: 2.5rem;
     z-index: 99;
   }
   #check:checked ~ .nav-items {
