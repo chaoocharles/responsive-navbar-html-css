@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 * {
   margin: 0;
@@ -19,20 +19,19 @@ nav {
   position: sticky;
   top: 0;
 }
-nav svg{
+nav svg {
   display: none;
 }
-.logo h2{
-    text-decoration: overline;
-    font-style: italic;
-    color: rgb(0, 206, 206);
-    cursor: pointer;
-    margin: 0 0.5rem;
+.logo h2 {
+  text-decoration: overline;
+  font-style: italic;
+  color: rgb(0, 206, 206);
+  cursor: pointer;
+  margin: 0 0.5rem;
 }
 .nav-items {
   display: flex;
   justify-content: space-between;
-  
 }
 .overview,
 .account {
@@ -55,20 +54,22 @@ nav a {
 nav a:hover {
   color: #a0ebfd;
 }
-nav a::after{
-    content: '';
-    display: block;
-    height: 3px;
-    background: #a0ebfd;
-    width: 0%;
-    transition: all ease-in-out 300ms;
+nav a::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #a0ebfd;
+  width: 0%;
+  transition: all ease-in-out 300ms;
 }
-nav a:hover::after{
-    width: 100%
+nav a:hover::after {
+  width: 100%;
 }
-#check, .menu{
+#check,
+.menu {
   display: none;
 }
+
 /* Hero section */
 .hero-section {
   height: 100vh;
@@ -77,11 +78,11 @@ nav a:hover::after{
 }
 
 /* Responsive */
-@media (max-width: 750px){
-  .nav-items{
+@media (max-width: 750px) {
+  .nav-items {
     position: fixed;
     top: 0;
-    right:0;
+    right: 0;
     height: 100vh;
     width: 250px;
     flex-direction: column;
@@ -91,43 +92,43 @@ nav a:hover::after{
     right: -250px;
     transition: all ease-in-out 500ms;
   }
-  .overview, .account{
+  .overview,
+  .account {
     flex-direction: column;
     width: auto;
   }
-  .overview{
+  .overview {
     margin: 0;
   }
-  
-  .nav-items h3{
+  .nav-items h3 {
     display: inline-block;
     font-weight: 400;
     text-transform: uppercase;
     font-size: 13px;
     margin-bottom: 1rem;
   }
-  nav svg{
+  nav svg {
     display: inline-block;
     cursor: pointer;
     vertical-align: top;
   }
-  nav li{
-    margin:1rem 0;
+  nav li {
+    margin: 1rem 0;
   }
-  nav a{
+  nav a {
     display: inline-block;
   }
-  nav a:hover{
+  nav a:hover {
     margin-left: 2px;
     transition: all ease-in-out 300ms;
   }
-  .menu{
+  .menu {
     display: inline-block;
     position: fixed;
     right: 2rem;
     z-index: 99;
   }
-  #check:checked ~ .nav-items{
-    right:0;
+  #check:checked ~ .nav-items {
+    right: 0;
   }
 }
